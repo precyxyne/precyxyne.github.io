@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blank 101</title>
+    <style>
+        body {
+            font-family: Times New Roman, Arial, sans-serif; /* Specify Times New Roman for content text */
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            text-align: left; /* Align all text content to the left */
+        }
+        header {
+            background-color: #cc101b; /* Dark red */
+            color: #fff;
+            padding: 20px;
+            position: relative; /* Position header relatively for absolute positioning */
+            display: flex; /* Use flexbox for alignment */
+            align-items: center; /* Center items vertically */
+        }
+        #logo {
+            width: 80px; /* Adjust according to your logo size */
+            height: auto;
+            position: absolute; /* Position the Blank 101 logo absolutely */
+            top: 50%; /* Align logo vertically to the middle */
+            transform: translateY(-50%); /* Adjust for vertical alignment */
+            left: 20px; /* Align logo to the left */
+            z-index: 1; /* Ensure the logo is on top of other elements */
+        }
+        #netflix-animation {
+            width: 800px; /* Make the animation three times larger */
+            height: auto;
+            position: absolute; /* Position the Netflix animation absolutely */
+            top: 50%; /* Align animation vertically to the middle */
+            transform: translateY(-50%); /* Adjust for vertical alignment */
+            right: 20px; /* Align animation to the right */
+            z-index: 1; /* Ensure the animation is on top of other elements */
+        }
+        h1 {
+            font-family: Century Gothic, Arial, sans-serif; /* Specify Century Gothic for header title */
+            font-size: 65px; /* Increase font size of header title */
+            margin: 0; /* Remove default margin */
+            padding-left: 120px; /* Add padding to avoid overlap with logo */
+            display: inline-block; /* Allow the title to display inline with the logos */
+            vertical-align: middle; /* Align title vertically with logos */
+            position: relative; /* Position title relatively for z-index */
+            z-index: 2; /* Ensure the title is on top of other elements */
+        }
+        main {
+            font-family: Times New Roman, Arial, sans-serif; /* Specify Times New Roman for content text */
+            font-size: 23px;
+            padding: 20px;
+            padding-right: 840px; /* Adjust to prevent text overlap with video */
+        }
+        h2 {
+            font-family: Century Gothic, Arial, sans-serif; /* Specify Century Gothic for subtitle */
+            font-size: 40px; /* Increase font size of content titles */
+        }
+        footer {
+            background-color: #cc101b; /* Dark red */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 2; /* Ensure footer is on top of other elements */
+        }
+        .qr-code {
+            width: 300px; /* Set the width of the QR code */
+            height: auto;
+            margin-top: 20px; /* Adjust margin as needed */
+            position: relative; /* Position the QR code relative to the footer */
+            z-index: 3; /* Ensure QR code is on top of other elements */
+        }
+        .event-link-container {
+            font-size: 23px; /* Set font size for the container */
+            margin-top: 20px; /* Adjust margin as needed */
+            text-align: left; /* Center-align the hyperlink */
+	    padding:20px
+        }
+        .event-link {
+            color: #fff; /* Set text color to white */
+            text-decoration: none; /* Remove underline from link */
+            margin: 0 10px; /* Add space around the hyperlink */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="logo" src="file:///C:/Users/precy/OneDrive/Documents/Python/pp.png" alt="Blank 101 Logo">
+        <h1>Iridiscent</h1>
+    </header>
+
+    <main>
+        <section id="event">
+            <h2>Netflix and No Chill</h2>
+            <p>An update to one of our previous events, Bamboozled, this event will look to test 
+participant’s knowledge on some of the most popular TV shows of our time, such 
+as Brooklyn 99, The Office, How I Met Your Mother, House MD, Sacred Games 
+and of course, Friends. There will be a mixture of 5-6 shows of different genres 
+appearing in all the 3 rounds. Teams will complete certain mini-games and answer 
+extremely in-depth trivia about the TV shows. </p>
+            <p>Test your knowledge of your favorite shows, movies, and characters!</p>
+            <p>Date: 6 Mar 2024</p>
+            <p>Time: 2:00 PM</p>
+            <p>Location: AB5- 204, 205</p>
+            <p>Don't miss out on the chance to win exciting prizes and connect with fellow Netflix enthusiasts!</p>
+        </section>
+    </main>
+
+    <!-- Embed the Netflix animation -->
+    <video id="netflix-animation" autoplay loop muted>
+        <source src="netflix_animation.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Hyperlink to event registration -->
+    <div class="event-link-container">
+        <p>Tap on the link below to register for revels:</p>
+        <a class="event-link" href="https://revelsmit.in/" target="_blank">'Tap here'</a>
+        <p>or you can just scan the qr below!</p>
+    </div>
+
+    <!-- QR Code for registration -->
+    <img class="qr-code" src="C:/Users/precy/OneDrive/Documents/Python/qr.jpg" alt="QR Code for registration">
+
+    <footer>
+        <p>&copy; 2024 Blank 101</p>
+    </footer>
+</body>
+</html>
